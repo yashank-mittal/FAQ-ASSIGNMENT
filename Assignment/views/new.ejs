@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aqua;">
+    <div style="width: 500px;text-align: center; margin: 80px auto;">
+        <fieldset>
+            <legend>Add New FAQ</legend>
+            <form action="/faq" method="POST" style="background-color: lightgreen" class="row g-3 needs-validation">
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Enter Your Questions Here</label>
+                    <input type="text" name="ques" class="form-control" id="validationCustom01" style="height: 50px;width: 400px;text-align: center;" required>
+                    <!-- <div class="valid-feedback">
+                      Looks good!
+                    </div> -->
+                </div>
+                <br>
+                <br>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">View Your Answers</label>
+                    <input type="text" name="ans" class="form-control" id="validationCustom02" style="height: 50px;width: 400px;text-align: center;" required>
+                    <!-- <div class="valid-feedback">
+                      Looks good!
+                    </div> -->
+                </div>
+                <br>
+                <br>
+                <button style="width:300px;background-color: lightblue; color:black">Save</button>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

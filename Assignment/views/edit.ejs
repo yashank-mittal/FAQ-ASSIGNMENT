@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aqua;">
+    <div style="width: 500px;text-align: center; margin: 80px auto;">
+        <fieldset>
+            <legend>Edit FAQS</legend>
+            <form action="/faq/<%=faq._id%>?_method=PATCH" method="POST" style="background-color: lightgreen">
+                <input type="text" name="ques" placeholder="Enter Your Questions Here" class="form-control" style="height: 50px;width: 400px;text-align: center;" value="<%=faq.ques%>">
+                <br>
+                <br>
+                <input type="text" name="ans" placeholder="Enter Your Answer" class="form-control" style="height: 50px;width: 400px;text-align: center;" value="<%=faq.ans%>">
+                <br>
+                <br>
+                <button style="width:300px;background-color: lightblue; color:black">Update!!</button>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
