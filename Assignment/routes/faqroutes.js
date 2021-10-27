@@ -5,7 +5,7 @@ const Faq = require('../models/faqmodel');
 
 //Get All Faqs
 router.get('/',(req,res)=>{
-    res.redirect('/faq');
+    res.send("Home Page");
 })
 
 router.get('/faq',async(req,res)=>{
