@@ -29,7 +29,7 @@ mongoose.connect(process.env.MONGO_URL,
 
 // seedDB();
 
-app.use(faqroutes);
+app.use('/faq',faqroutes);
 
 app.listen(process.env.PORT || 8080,()=>{
     console.log("Server is Running")
