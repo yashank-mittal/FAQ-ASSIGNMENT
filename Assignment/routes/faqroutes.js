@@ -4,6 +4,10 @@ const router = express.Router();
 const Faq = require('../models/faqmodel');
 
 //Get All Faqs
+router.get('/',(req,res)=>{
+    res.redirect('/faq');
+})
+
 router.get('/faq',async(req,res)=>{
     const faqs=await Faq.find({});
     res.render('index',{faqs})
